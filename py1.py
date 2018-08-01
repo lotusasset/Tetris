@@ -45,3 +45,7 @@ you.age = 60
 homo = person.Human('sap',58)
 print(homo.name)
 homo.older()
+
+import pygame
+print(dir(pygame))
+        
