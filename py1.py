@@ -48,4 +48,23 @@ homo.older()
 
 import pygame
 print(dir(pygame))
-        
+
+def fib(nth_term):
+    if nth_term == 1 or nth_term == 2:
+        return 1
+    return fib(nth_term - 1) + fib(nth_term-2)
+print(fib(10))
+
+def fib2(nth_term):
+    if nth_term == 1 or nth_term == 2:
+        return 1
+    n = 3
+    fibnminus2 =1
+    fibnminus1 = 1
+    while (n < nth_term):
+        fibn = fibnminus1 + fibnminus2
+        fibnminus2 = fibnminus1
+        fibnminus1 = fibn
+        n = n + 1
+    return fibnminus1 + fibnminus2
+print(fib2(100))
